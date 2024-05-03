@@ -1,0 +1,14 @@
+CREATE DATABASE application;
+USE application;
+
+CREATE TABLE users (
+    email VARCHAR(255) PRIMARY KEY,
+    salutations VARCHAR(50) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    mobile_number VARCHAR(20) NOT NULL, 
+    landline_number VARCHAR(20) 
+);
+
+INSERT INTO users (email, salutations, first_name, last_name, mobile_number)
+VALUES ('RamonDog@gmail.com', 'Mr.', 'Ramon', 'Tuazon', '+1234567890');
