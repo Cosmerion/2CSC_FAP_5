@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Captcha" />
         <title>CAPTCHA</title>
-        <style><%@include file="/WEB-INF/css/signtest.css"%></style>
+        <style><%@include file="/WEB-INF/css/captcha.css"%></style>
         <script>
             // para hindi macopy
             function preventCopy(event) {
@@ -60,7 +60,7 @@
               </div>
               <p>Generated Captcha:</p>
               <h2 id="captcha" oncopy="preventCopy(event)">${sessionScope.captcha}</h2>
-              
+              <div id="captchaForm">
               <div class="forms">
                 <form class="form" action="captchaVerif" method="POST">
                   <input id="captchaVerif" name="captchaVerif" type="captcha" placeholder="Enter Captcha*" required autocomplete="off">
@@ -68,6 +68,7 @@
                   <button type="submit" id="submit" class="btn">Submit</button>
                 </form>
               </div>
+            </div>
             </div>
         </div>
         <%--  <jsp:include page="/WEB-INF/footer.jsp"/> --%>
