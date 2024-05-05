@@ -102,6 +102,21 @@ p {
   font-family: Poppins;
   font-size: 1rem;
 }
+#captchaForm {
+  width: 100%;
+  align-items: center;
+}
+.form CaptchaVerif {
+  width: 100%; 
+  max-width: 300px; 
+  padding: 0.8rem;
+  margin: 0 auto; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-size: 1rem;
+  display: block; 
+}
 
 .form button {
   padding: 0.8rem 2rem; 
